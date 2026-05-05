@@ -1,0 +1,353 @@
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e8f5e9, #f1f8e9);
+}
+
+/* HEADER */
+header {
+    background: #2f855a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+    height: 80vh;
+    background: url("gambarbaru.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-text {
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    font-size: 45px;
+}
+
+.hero-text p {
+    font-size: 18px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #38a169, #68d391);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(56,161,105,0.6);
+}
+
+/* CARD */
+.card {
+    background: white;
+    width: 70%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h2 {
+    color: #2f855a;
+}
+
+/* ===================== */
+/* ROLE SECTION 🔥 */
+/* ===================== */
+
+.role-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #e8f5e9, #f1f8e9);
+}
+
+.headline {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+/* CONTAINER */
+.role-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* CARD PREMIUM */
+.role-card {
+    background: linear-gradient(145deg, #ffffff, #f3f3f3);
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* HOVER */
+.role-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+/* LINE ATAS */
+.role-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #38a169, #68d391);
+}
+
+/* IMAGE */
+.role-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.role-card:hover .role-img {
+    transform: scale(1.05);
+}
+
+/* TITLE */
+.role-card h3 {
+    text-align: center;
+    color: #2f855a;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* LINE BAWAH */
+.role-card h3::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #38a169;
+    margin: 8px auto;
+    border-radius: 10px;
+}
+
+/* TEXT */
+.role-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* DESCRIPTION */
+.role-description {
+    max-width: 700px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* ===================== */
+/* GALLERY 🔥 */
+/* ===================== */
+
+.gallery {
+    text-align: center;
+    padding: 40px;
+}
+
+.gallery h2 {
+    color: #2f855a;
+}
+
+/* BIG BOX */
+.gallery-box {
+    background: white;
+    width: 80%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* IMAGES */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-item img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+.gallery-item p {
+    margin-top: 8px;
+}
+
+/* ===================== */
+/* EXTRA SECTION */
+/* ===================== */
+
+.extra {
+    background: white;
+    width: 70%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.extra h2 {
+    color: #2f855a;
+}
+
+/* FOOTER */
+footer {
+    background: #2f855a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ===================== */
+/* FINAL TOUCH 🔥 */
+/* ===================== */
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+/* FADE ANIMATION */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* DELAY UNTUK CARD */
+.role-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.role-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.role-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* BUTTON GLOW 🔥 */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.2);
+    top: 0;
+    left: -100%;
+    transition: 0.4s;
+}
+
+.btn:hover::after {
+    left: 100%;
+}
+
+/* IMAGE HOVER SMOOTH */
+.role-img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.role-card:hover .role-img {
+    transform: scale(1.07);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* CARD HOVER SMOOTH */
+.role-card {
+    transition: all 0.4s ease;
+}
+
+/* GALLERY HOVER UPGRADE */
+.gallery-item img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.12) rotate(1deg);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* SECTION SPACING FIX */
+section {
+    margin-bottom: 20px;
+}
